@@ -1,0 +1,45 @@
+{
+    "type": "OneCancelsOtherOrder",
+    "oneCancelsOtherOrder": {
+        "FirstOrder": {
+            "Id": "0.9202557189052116",
+            "Symbol": "BNBUSDT",
+            "OrderDirection": "Buy",
+            "Quantity": 0.01,
+            "OrderType": "Limit",
+            "TimeInForce": {
+                "$type": "QuantConnect.Orders.TimeInForces.GoodTilCanceledTimeInForce"
+            },
+            "Price": 611
+        },
+        "SecondOrders": [
+            {
+                "Id": "0.20038216392642427",
+                "Symbol": "BNBUSDT",
+                "OrderDirection": "Sell",
+                "Quantity": 0.01,
+                "OrderType": "Limit",
+                "TimeInForce": {
+                    "$type": "QuantConnect.Orders.TimeInForces.GoodTilCanceledTimeInForce"
+                },
+                "Price": 613
+            }
+        ]
+    },
+    "oneTriggersTheOtherOrder": {
+        "TriggerOrder": {},
+        "FollowingOrders": []
+    },
+    "oneTriggersAOneCancelsTheOther": {
+        "TriggerOrder": {},
+        "OneCancelsOtherOrder": {
+            "FirstOrder": {},
+            "SecondOrders": []
+        }
+    },
+    "bracketOrder": {
+        "MainOrder": {},
+        "TakeProfitOrder": {},
+        "StopLossOrder": {}
+    }
+}

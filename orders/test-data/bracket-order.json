@@ -1,0 +1,53 @@
+{
+    "type": "BracketOrder",
+    "oneCancelsOtherOrder": {
+        "FirstOrder": {},
+        "SecondOrders": []
+    },
+    "oneTriggersTheOtherOrder": {
+        "TriggerOrder": {},
+        "FollowingOrders": []
+    },
+    "oneTriggersAOneCancelsTheOther": {
+        "TriggerOrder": {},
+        "OneCancelsOtherOrder": {
+            "FirstOrder": {},
+            "SecondOrders": []
+        }
+    },
+    "bracketOrder": {
+        "MainOrder": {
+            "Id": "0.377795154325796",
+            "Symbol": "BNBUSDT",
+            "OrderDirection": "Sell",
+            "Quantity": 0.1,
+            "OrderType": "Limit",
+            "TimeInForce": {
+                "$type": "QuantConnect.Orders.TimeInForces.GoodTilCanceledTimeInForce"
+            },
+            "Price": 616
+        },
+        "TakeProfitOrder": {
+            "Id": "0.6263750363572145",
+            "Symbol": "BNBUSDT",
+            "OrderDirection": "Sell",
+            "Quantity": 0.1,
+            "OrderType": "Limit",
+            "TimeInForce": {
+                "$type": "QuantConnect.Orders.TimeInForces.GoodTilCanceledTimeInForce"
+            },
+            "Price": 618
+        },
+        "StopLossOrder": {
+            "Id": "0.9290896864649882",
+            "Symbol": "BNBUSDT",
+            "OrderDirection": "Buy",
+            "Quantity": 0.1,
+            "OrderType": "Limit",
+            "TimeInForce": {
+                "$type": "QuantConnect.Orders.TimeInForces.GoodTilCanceledTimeInForce"
+            },
+            "Price": 613
+        }
+    }
+}
